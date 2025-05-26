@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de eventos</title>
+</head>
+<body>
+    <h1>evento de imagenes</h1>
+    <img src="img/yamaha.jpg" id="yamaha" alt="yamaha">
+     <script>
+        const yamaha = document.getElementById('yamaha');
+        yamaha.addEventListener('click',function() {
+        alert('has clickeado la imagen' );
+        console.log(yamaha);
+    });
+
+     </script>
+
+     <h2>doble click</h2>
+     <img src="img/fz.jpg" id="fz" alt="fz">
+     <script>
+        const fz = document.getElementById('fz');
+        fz.addEventListener('dblclick',function() {
+        this.style.backgroundColor = 'rgb(162, 5, 5)';
+        this.src="img/yz-125.jpg"
+        setTimeout(() => {
+           this.src="img/fz.jpg";
+        }, 1500);
+    })
+     </script>
+     
+     <h2>mouseover</h2>
+     <img src="img/mt.jpg" id="mt" alt="mt">
+     <script>
+        const mt = document.getElementById('mt');
+        mt.addEventListener('mouseover',function() {
+        this.trancision
+        
+    })
+     </script>
+</body>
+</html>
